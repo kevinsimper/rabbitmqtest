@@ -1,4 +1,4 @@
 const amqplib = require("amqplib");
 exports.connect = async (url) => {
-  return amqplib.connect(url);
+  return await amqplib.connect(url);
 };
